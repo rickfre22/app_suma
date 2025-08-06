@@ -104,6 +104,7 @@ frame_3.place(x=10,y= 390)
 #area de teto
 t_resultado =Text(frame_3,width=50,height =3)
 t_resultado.config(bg="green",fg="white",font=("Courier",20))
+t_resultado.pack()
 
 #Metodo principal quedespiega la ventana en pantalla
 ventana_principal.mainloop()
