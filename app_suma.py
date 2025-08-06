@@ -1,4 +1,3 @@
- 
 from tkinter import *
 
 # -----------------------------------------------------
@@ -80,13 +79,31 @@ frame_2= Frame(ventana_principal)
 frame_2.config(bg="ivory2", width=780,height=120)
 frame_2.place(x=10,y=260)
 #boton para sumar
-bt_sumar = Button(frame_2, text="sumar",width=10)
+img_bt_sumar =PhotoImage(file="img/boton_sumar.png")
+bt_sumar  =Button(frame_2,image =img_bt_sumar,width=105,height=105)
+#bt_sumar = Button(frame_2, text="sumar",width=10)
+bt_sumar.place(x=116,y=7)
 
+#boton para borrar
+img_bt_borrar =PhotoImage(file="img/boton_borrar.png")
+bt_borrar  =Button(frame_2,image =img_bt_borrar,width=105,height=105)
+#bt_sumar = Button(frame_2, text="sumar",width=10)
+bt_borrar.place(x=337,y=7)
+
+#boton para salir
+img_bt_salir =PhotoImage(file="img/boton_salir.png")
+bt_salir  =Button(frame_2,image =img_bt_salir,width=105,height=105)
+#bt_sumar = Button(frame_2, text="sumar",width=10)
+bt_salir.place(x=558,y=7)
 #--------------------------
 # frame 3 -Resultado
 #--------------------------
 frame_3= Frame(ventana_principal)
 frame_3.config(bg="ivory2", width=780,height=100)
 frame_3.place(x=10,y= 390)
+#area de teto
+t_resultado =Text(frame_3,width=50,height =3)
+t_resultado.config(bg="green",fg="white",font=("Courier",20))
+
 #Metodo principal quedespiega la ventana en pantalla
 ventana_principal.mainloop()
